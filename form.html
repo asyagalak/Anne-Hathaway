@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Набір в школу акторів</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div id="mainForm">
+        <h2>Анкета для молодих , перспеткивних і креативних акторів</h2>
+        <form enctype="multipart/form-data" method="post" action="/">
+            <div class="form-group">
+                <label for="firstName">Ім'я</label>
+                <input class="form-control" type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Прізвище</label>
+                <input class="form-control" type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input class="form-control" type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label><br/>
+                <input class="form-control" type="tel" name="phone" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Стать</label><br/>
+                <input type="radio" name="Sex" value="Female" checked id="female" />
+                <label for="female">Чоловік</label><br/>
+                <input type="radio" name="Sex" value="Male" id="male" />
+                <label for="male"> Жінка</label><br/>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Скільки Вам років?</label><br/>
+                <select class="form-control" name="age" id="age">
+                <option selected="selected" value="first">16-18</option>
+                <option value="second">19-25</option>
+                <option value="third">26-30</option>
+                <option value="fourth">31 і більше</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">З якого Ви міста?</label>
+                <select class="form-control" name="city" id="city">
+            <option selected = "selected" value = "first">Київ</option>
+            <option value = "town_2" value = "2">Львів</option>
+            <option value = "town_3" value = "first">Харків</option>
+            <option value = "town_4" value = "first">Одеса</option>
+            <option value = "town_5" value = "first">Дніпропетровськ></option>
+            <option value = "town_6" value = "first">Луцьк</option>
+            <option value = "town_7" value = "first">Ужгород</option>
+            <option value = "town_8" value = "first">Чернівці</option>
+            <option value = "town_9" value = "first">Тернопіль</option>
+            <option value = "town_10" value = "first">Рівне</option>
+            <option value = "town_11" value = "first">Суми</option>
+            <option value = "town_12" value = "first">Миколаїв</option>
+            <option value = "town_13" value = "first">Херсон</option>
+            <option value = "town_14" value = "first">Крим</option>
+        </select>
+            </div>
+
+            <div class="form-group">
+                <label>Якою мовою володієте?</label><br/>
+                <input type="checkbox" name="city" value="English" /> English<br />
+                <input type="checkbox" name="city" value="Ukrainian" /> Українська<br />
+                <input type="checkbox" name="city" value="Russian" /> Русский<br />
+                <input type="checkbox" name="city" value="Polish" /> Polska <br />
+                <input type="checkbox" name="city" value="France" /> France <br />
+                <input type="checkbox" name="city" value="Other" /> Інше <br />
+            </div>
+
+            <div class="form-group">
+                <label for="aboutMe">Про себе</label><br/>
+                <textarea class="form-control" name="aboutMe" rows="5" cols="50" id="aboutMe"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Фото</label><br/>
+                <input type="file" name="photo" multiple accept="image/*">
+            </div>
+
+            <input class="btn" type="submit" value="Підтвердити">
+        </form>
+    </div>
+</body>
+
+</html>
